@@ -1,0 +1,90 @@
+.banner {
+    justify-content: center;
+    height: 70vh;
+    background-image: url('/home/img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .row {
+    color: var(--white);
+    z-index: 10;
+}
+
+.banner.section .row.flex-col.center {
+    gap: 0;
+}
+
+.banner h1,
+.banner p {
+    max-width: 55%;
+}
+
+.banner .overlay {
+    opacity: 0.8;
+}
+
+.services.section {
+    position: relative;
+}
+
+.services.section::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url('/home/img/pattern.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.services.section .row {
+    position: relative;
+}
+
+.wrapper.services-wrapper {
+    justify-content: center;
+}
+
+.wrapper .item {
+    flex: 1 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid #CEAB6A;
+    border-radius: var(--borderRadius);
+}
+
+.wrapper .item img {
+    width: 50px;
+}
+
+.wrapper .item .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper .item .content h3 {
+    font-size: 24px;
+}
+
+@media (max-width: 560px) {
+    .banner {
+        height: fit-content;
+    }
+
+    .banner h1,
+    .banner p {
+        width: 100%;
+    }
+}
