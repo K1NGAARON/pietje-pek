@@ -26,6 +26,11 @@
     opacity: 0.8;
 }
 
+.contact.section a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
 .services.section {
     position: relative;
 }
@@ -47,35 +52,6 @@
 
 .services.section .row {
     position: relative;
-}
-
-.wrapper.services-wrapper {
-    justify-content: center;
-}
-
-.wrapper .item {
-    flex: 1 0 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    border: 2px solid #CEAB6A;
-    border-radius: var(--borderRadius);
-}
-
-.wrapper .item img {
-    width: 50px;
-}
-
-.wrapper .item .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.wrapper .item .content h3 {
-    font-size: 24px;
 }
 
 @media (max-width: 560px) {
