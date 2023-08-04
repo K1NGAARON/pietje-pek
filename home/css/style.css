@@ -134,6 +134,15 @@
 
     .banner h1,
     .banner p {
+        max-width: 100%;
+    }
+
+    .menu-wrapper .menu-item {
         width: 100%;
     }
+
+    .reviews.section h2, 
+    .reviews.section p {
+        width: 100%;
+    } 
 }
