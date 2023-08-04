@@ -7,7 +7,7 @@ $(document).scroll(function () {
         $(logo).attr("src","/assets/logo/logo-black.png");
     } else {
         header.removeClass('active');
-        $(logo).attr("src","/assets/logo/logo.png");
+        $(logo).attr("src","/assets/logo/logo-white.png");
     }
 });
 

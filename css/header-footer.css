@@ -2,7 +2,7 @@
     background-color: transparent;
     min-height: unset;
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     transition: background-color 200ms linear;
 }
 
@@ -51,7 +51,7 @@
 
 .header .logo,
 .footer .logo {
-    width: 100px;
+    width: 75px;
 }
 
 .header .nav-logo {
