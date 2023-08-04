@@ -1,6 +1,6 @@
 .banner {
     justify-content: center;
-    height: 70vh;
+    height: 80vh;
     background-image: url('/home/img/banner.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,8 +22,49 @@
     max-width: 55%;
 }
 
-.banner .overlay {
-    opacity: 0.8;
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-wrapper .menu-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-wrapper .menu-item-row h3 {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.menu-wrapper .menu-item-row .price {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.menu-wrapper .menu-item {
+    width: 70%;
+}
+
+.menu-wrapper .divider {
+    flex: 1;
+    border: none;
+    border-top: 2px solid var(--primary);
+}
+
+.contact.section,
+.contact.section .row {
+    min-height: 50vh;
+}
+
+.contact.section h2,
+.contact.section p,
+.contact.section a {
+    text-align: center;
 }
 
 .contact.section a {
@@ -52,6 +93,34 @@
 
 .services.section .row {
     position: relative;
+}
+
+.reviews.section,
+.reviews.section .row {
+    height: 60vh;
+}
+
+.reviews.section h2,
+.reviews.section p {
+    text-align: center;
+    width: 60%;
+}
+
+.reviews.section .review-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.reviews.section .review-toggle {
+    transition: var(--transition);
+}
+
+.reviews.section .review-toggle.active {
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: var(--transition);
 }
 
 @media (max-width: 560px) {

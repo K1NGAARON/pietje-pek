@@ -71,6 +71,10 @@ img {
     flex-direction: column;
 }
 
+.section.relative {
+    position: relative;
+}
+
 .section.black {
     color: var(--white);
     background-color: var(--black);
@@ -174,6 +178,28 @@ img {
 
 .section.contact .row.flex-col {
     align-items: flex-start;
+}
+
+.decor {
+    position: absolute;
+    width: 20%;
+    opacity: 0.6;
+}
+
+.decor.opacity-1 {
+    opacity: 1;
+}
+
+.decor.bottom.right {
+    right: 10px;
+    bottom: 10px;
+    transform: rotate(90deg);
+}
+
+.decor.top.left {
+    top: 10px;
+    left: 10px;
+    transform: rotate(270deg);
 }
 
 .form-wrapper {
