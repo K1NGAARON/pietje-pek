@@ -117,6 +117,10 @@
     transition: var(--transition);
 }
 
+.reviews.section .review-toggle:hover {
+    cursor: pointer;
+}
+
 .reviews.section .review-toggle.active {
     background-color: var(--white);
     border-radius: 50%;
