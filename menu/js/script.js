@@ -2,16 +2,9 @@ function filterContent(e) {
     $('.filter-btn').removeClass('active');
     $(this).addClass('active');
 
-    $('.content .card').fadeOut();
-
-    // Selected Tag
-    // let activeFilter = $(this).attr('id');
-
-    // if (activeFilter === 'all') {
-    //     $('.content .card').fadeIn();
-    // } else {
-    //     $('.' + activeFilter).fadeIn();
-    // }
+    // Update image source based on the clicked button's ID
+    let imageSrc = '/menu/img/' + $(this).attr('id') + '.png';
+    $('#menu-img').attr('src', imageSrc);
 }
 
 $(document).ready(function() {
