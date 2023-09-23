@@ -1,3 +1,8 @@
+.banner {
+    height: 60vh;
+    background-image: url('/contact/img/banner.jpg');
+}
+
 .banner .row {
     color: var(--white);
     z-index: 10;

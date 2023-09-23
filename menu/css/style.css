@@ -1,3 +1,7 @@
+.banner {
+    background-image: url('/menu/img/banner.jpg');
+}
+
 .filter-wrapper .filter-btn {
     color: var(--black);
     font-size: 18px;

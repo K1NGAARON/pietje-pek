@@ -1,3 +1,8 @@
+.banner {
+    height: 90vh;
+    background-image: url('/newsletter/img/banner.jpg');
+}
+
 .banner h1, 
 .banner p {
     max-width: 100%;
