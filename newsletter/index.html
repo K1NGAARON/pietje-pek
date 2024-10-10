@@ -199,11 +199,12 @@
 
 <div id="overlay"></div>
 
-<script type="text/javascript">(function(){var k=function(a,c,d,b){if(a.getElementById(d)){if(b){var e=100;var f=function(){setTimeout(function()
-    {e--;if(window.RESENGO_WIDGET_SCRIPT_LOADED)b();else if(0<e)f();else throw Error("resengo script failed to load");},100)};f()}}else{var g=a.getElementsByTagName(c)
-    [0];a=a.createElement(c);a.id=d;a.src="https://static.resengo.com/ResengoWidget";b&&(a.onload=b);g.parentNode.insertBefore(a,g)}},h=function()
-    {return k(document,"script","resengo-flow-widget-script",function(){RESENGO_WIDGET({companyId:"1768931",language:"nl"})})};
-    window.attachEvent?window.attachEvent("onload",h):window.addEventListener("load",h,!1)})();</script>
+<!-- Zenchef Widget SDK -->
+<script>;(function (d, s, id) {const el = d.getElementsByTagName(s)[0]; if (d.getElementById(id) || el.parentNode == null) {return;} var js = d.createElement(s);  js.id = id; js.async = true; js.src = 'https://sdk.zenchef.com/v1/sdk.min.js';  el.parentNode.insertBefore(js, el); })(document, 'script', 'zenchef-sdk')</script>
+<div
+   class="zc-widget-config"
+   data-restaurant="369892"
+   data-open="2000"></div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="/js/global.js"></script>
