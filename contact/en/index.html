@@ -217,12 +217,14 @@
 
 <div id="overlay"></div>
 
-<!-- Zenchef Widget SDK -->
-<script>;(function (d, s, id) {const el = d.getElementsByTagName(s)[0]; if (d.getElementById(id) || el.parentNode == null) {return;} var js = d.createElement(s);  js.id = id; js.async = true; js.src = 'https://sdk.zenchef.com/v1/sdk.min.js';  el.parentNode.insertBefore(js, el); })(document, 'script', 'zenchef-sdk')</script>
-<div
-   class="zc-widget-config"
-   data-restaurant="369892"
-   data-open="2000"></div>
+ <script> 
+    (function(g,s,t,p,l,n){
+      g["_gstpln"]={};
+      (l=s.createElement(t)),(n=s.getElementsByTagName(t)[0]);
+      l.async=1;l.src=p;n.parentNode.insertBefore(l,n);
+    })(window,document,"script","https://cdn.guestplan.com/widget.js");
+  _gstpln.accessKey = "390236b776b71de5772065e5c94095cf7f1746e2";
+ </script> 
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="/js/global.js"></script>
