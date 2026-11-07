@@ -295,3 +295,12 @@
         display: none;
     } */
 }
+.holiday-notice {
+    position: relative;
+    z-index: 1000;
+    padding: 10px 16px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 15px;
+    text-align: center;
+}

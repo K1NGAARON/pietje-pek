@@ -1,3 +1,16 @@
+// Feestdagenmelding: verdwijnt vanzelf vanaf 2 januari 2027
+(function () {
+    if (new Date() >= new Date('2027-01-02T00:00:00+01:00')) return;
+    const isEn = /(^|\/)en(\/|$)/.test(window.location.pathname);
+    const bar = document.createElement('div');
+    bar.className = 'holiday-notice';
+    bar.setAttribute('role', 'note');
+    bar.textContent = isEn
+        ? 'Closed on 24 December · During the holidays we serve à la carte'
+        : 'Gesloten op 24 december · Tijdens de feestdagen werken wij à la carte';
+    document.body.prepend(bar);
+})();
+
 $(document).scroll(function () {
     const header = $('.header');
     const logo = $('.header .logo');
